@@ -1,0 +1,20 @@
+
+    <div class="container">
+        <h1>Welcome Back! It's great to have you here again.</h1>
+        <p>It seems you already have a profile. Please login!</p>
+        {{#if error}}
+                <div class="error">Something went wrong! It is totally your fault.</div>
+            {{/if}}
+
+        <form method="post">
+            
+                <div class="input-wrapper"><input id="email" type="text" name="email" placeholder="  E-mail Address" ></div>
+                
+                <div class="input-wrapper"><input id="password" type="password" name="password" placeholder="  Password"></div>
+                
+                <div class="input-wrapper"><input type="hidden" name="_csrf" value="{{csrfToken}}"></div>
+
+                <div class="container-button"><button id="button">Log in</button></div>
+
+        </form>
+    </div>

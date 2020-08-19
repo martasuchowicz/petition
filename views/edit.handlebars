@@ -1,0 +1,31 @@
+
+<div class="container">
+    <h1>Here You Can Edit Your Profile!</h1>
+
+        {{#if error}}
+            <div class="error">Something went wrong! It is totally your fault.</div>
+        {{/if}}
+
+    <form method="post">
+
+        <div class="input-wrapper"><input type="text" placeholder="  First name" name="first" id="first" value="{{first}}"></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  Last name" name="last" id="last" value="{{lastn}}" ></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  E-mail" name="email" id="email" value="{{email}}"></div>
+
+        <div class="input-wrapper"><input id="password" type="password" name="password" placeholder="  Password"></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  Age" name="age" id="age" value="{{age}}"></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  City" name="city" id="city" value="{{city}}"></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  Webstie" name="url" id="url" value="{{url}}"></div>
+
+        <div class="container-button"><button id="button">Update</button></div>
+
+        <div class="input-wrapper"><input type="hidden" name="_csrf" value="{{csrfToken}}"></div>
+        
+    </form>
+        
+</div>

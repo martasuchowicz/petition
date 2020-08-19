@@ -1,0 +1,33 @@
+
+
+<div class="container">
+    <h1>Petition for lifting <br> the Sunday trade ban in Poland</h1>
+
+    <div class="p-container"><p>If you are here, it means you have had enough of the injustices and lies of the Law and Justice (PiS) government. Register today and sign our petition!</p></div>
+
+    <div class="p-container"><p>Thanks to the rule of Law and Justice (PiS), Polish citizens were deprived of the opportunity to decide on their own rights. Three years ago, the same government decided to ban trade on Sunday. Small Polish entrepreneurs had to close their stores because they did not bring income. All this to force Poles to go to the Church and allow the Żabka chain of stores controlled by the owner of Catholic radio in Poland to exploit Poles.</p></div>
+
+        {{#if error}}
+            <div class="error">Something went wrong! It is totally your fault.</div>
+        {{/if}}
+
+    <form method="post">
+
+        <div class="input-wrapper"><input type="text" placeholder="  First name:" name="first" id="first" required></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  Last name:" name="last" id="last" required></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  E-mail:" name="email" id="email" required></div>
+
+        <div class="input-wrapper"><input id="password" type="password" name="password" placeholder="  Password" required></div>
+
+        <div class="container-button"><button id="button">Sign Up</button></div>
+
+        <p> Are you already registered? Please log in <a href="./login"> here.</a></p>
+
+        <div class="input-wrapper"><input type="hidden" name="_csrf" value="{{csrfToken}}"></div>
+
+        </form>
+
+</div>
+

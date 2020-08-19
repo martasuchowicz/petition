@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #174276;
+    background-image: radial-gradient(
+        circle 1224px at 10.6% 8.8%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(153, 202, 251, 1) 100.2%
+    );
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #082642;
+    text-shadow: 4px 4px 2px rgba(255, 255, 255, 0.3);
+}
+
+a {
+    color: #174276;
+}
+.container,
+.container-button {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    flex-grow: 2;
+    flex-direction: column;
+}
+.p-container,
+p {
+    display: flex;
+    max-width: 750px;
+    align-self: center;
+    text-align: center;
+    line-height: 1.5rem;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3);
+}
+
+form {
+    align-self: center;
+    margin-top: 20px;
+}
+.input-wrapper {
+    padding: 10px;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+    box-shadow: 4px 4px 2px rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+canvas {
+    width: 400px;
+    height: 200px;
+    border: #082642 1px solid;
+}
+
+label {
+    display: block;
+}
+
+.container-button {
+    margin-top: 10px;
+}
+
+button {
+    height: 34px;
+    width: 150px;
+    box-shadow: 4px 4px 2px rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background-color: white;
+    color: #082642;
+}
+
+button:hover {
+    background-color: rgba(153, 202, 251, 1);
+    color: white;
+    box-shadow: 4px 4px 2px rgba(255, 255, 255, 0.3);
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    padding-left: 20px;
+    font-size: 0.75rem;
+    color: #082642;
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.3);
+}

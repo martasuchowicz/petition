@@ -1,0 +1,23 @@
+<div class="container">
+
+<h1>No More Trade Ban In Poland!!!</h1>
+
+<p>Here You Can Check Who Signed Our Petition</p>
+
+
+
+{{#if error}}
+  <div class="error">Something went wrong! It is totally your fault.</div>
+{{/if}}
+
+{{#each supporters}}
+<p>
+   <a href="{{url}}"> {{first}} {{last}} </a>, {{age}}
+    , <a href="./signers/{{city}}" >{{city}}</a> 
+</p>
+
+{{/each}}
+
+    <p> Do You Want To Edit Your Profile? <a href="./edit">Edit</a></p>
+
+</div>

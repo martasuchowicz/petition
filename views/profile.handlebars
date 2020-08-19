@@ -1,0 +1,25 @@
+
+<div class="container">
+    <h1>Welcome! It's great to have you here!</h1>
+    <p>Here You Can Tell Us A Little Bit More About Yourself!</p>   
+
+        {{#if error}}
+            <div class="error">Something went wrong! It is totally your fault.</div>
+        {{/if}}
+
+    <form method="post">
+
+        <div class="input-wrapper"><input type="text" placeholder="  Age:" name="age" id="age"></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  City:" name="city" id="city"></div>
+
+        <div class="input-wrapper"><input type="text" placeholder="  Webstie:" name="url" id="url"></div>
+                
+        <div class="input-wrapper"><input type="hidden" name="_csrf" value="{{csrfToken}}"></div>
+
+        <div class="container-button"><button id="button">Continue</button></div>
+
+        </form>
+        
+</div>
+

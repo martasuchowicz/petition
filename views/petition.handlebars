@@ -1,0 +1,23 @@
+
+<div class="container">
+    <h1>Petition for lifting <br> the Sunday trade ban in Poland</h1>
+
+    <div class="p-container"><p>Thanks to the rule of Law and Justice (PiS), Polish citizens were deprived of the opportunity to decide on their own rights. Three years ago, the same government decided to ban trade on Sunday. Small Polish entrepreneurs had to close their stores because they did not bring income. All this to force Poles to go to the Church and allow the Żabka chain of stores controlled by the owner of Catholic radio in Poland to exploit Poles.</p></div>
+    
+    <form method="post">
+
+      {{#if error}}
+        <div class="error">Something went wrong! It is totally your fault.</div>
+      {{/if}}
+
+      <div class="input-wrapper"><input type="hidden" placeholder="  Signature" name="signature" id="signature"></div>
+
+      <div class="input-wrapper"><canvas id="canvas" name="canvas">Your Signature</canvas></div>
+
+      <div class="input-wrapper"><input type="hidden" name="_csrf" value="{{csrfToken}}"></div>
+
+      <div class="container-button"><button id="button" type="submit" value="submit">Sign</button></div> 
+    </form>
+</div>
+
+
